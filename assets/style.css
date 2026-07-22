@@ -296,6 +296,7 @@ html.is-ready .hero__line:nth-child(3) .hero__word{transition-delay:.2s}
 .ga:hover img{filter:grayscale(0) contrast(1) brightness(1);transform:scale(1.06)}
 .ga:hover::after{opacity:1}
 .ga:hover .ga__cap{opacity:1;transform:none}
+.ga__lnk{position:absolute;inset:0;z-index:4;display:block}
 @media (max-width:820px){.gallery__grid{grid-template-columns:repeat(2,1fr)}.ga--wide{grid-column:span 2}}
 
 /* ============================================================

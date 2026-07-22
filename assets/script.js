@@ -121,7 +121,7 @@
     b.addEventListener('click', function () {
       var f = b.getAttribute('data-f');
       fBtns.forEach(function (x) { x.classList.toggle('is-on', x === b); });
-      prs.forEach(function (p) { p.classList.toggle('hide', f !== 'all' && p.getAttribute('data-cat') !== f); });
+      prs.forEach(function (p) { if (p.classList.contains('pr--always')) { p.classList.remove('hide'); return; } p.classList.toggle('hide', f !== 'all' && p.getAttribute('data-cat') !== f); });
     });
   });
 
