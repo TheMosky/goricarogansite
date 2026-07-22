@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dr Gorica Rogan Opačić — Estetska medicina · Poliklinika Pekić</title>
+  <meta name="description" content="Umetnost prirodne lepote. Dr Gorica Rogan Opačić — specijalista plastične, rekonstruktivne i estetske hirurgije. Hijaluronski fileri, mezoterapija, korekcija bora. Beograd i Novi Sad." />
+  <meta name="theme-color" content="#1b1216" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b1216'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-style='italic' fill='%23be6e52' text-anchor='middle'%3Eg%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__word" aria-hidden="true">
+        <span>Poliklinika</span><span class="loader__word-i">Pekić</span>
+      </div>
+      <div class="loader__count"><span id="loaderNum">0</span><i>%</i></div>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <!-- ================= OVERLAYS ================= -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+  <div class="side-progress" aria-hidden="true"><span id="sideProgress"></span></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="head" id="head">
+    <a href="#top" class="head__brand" data-cursor="home">
+      <span class="head__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 11c-3.4 3.4-6.8 5.2-6.8 9.4a6.8 6.8 0 0 0 13.6 0c0-4.2-3.4-6-6.8-9.4z" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+      </span>
+      <span class="head__name">Gorica&nbsp;Rogan&nbsp;Opačić</span>
+    </a>
+
+    <nav class="head__nav" aria-label="Glavna navigacija">
+      <a href="#o-meni" data-cursor="link"><i>01</i> O nama</a>
+      <a href="#tretmani" data-cursor="link"><i>02</i> Tretmani</a>
+      <a href="#cenovnik" data-cursor="link"><i>03</i> Cenovnik</a>
+      <a href="#pitanja" data-cursor="link"><i>04</i> Pitanja</a>
+    </nav>
+
+    <a href="#kontakt" class="head__cta" data-cursor="book">
+      <span class="head__cta-txt">Zakažite</span>
+      <span class="head__cta-dot" aria-hidden="true"></span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Meni" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <!-- mobile overlay menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav">
+      <a href="#top"><i>00</i> Početna</a>
+      <a href="#o-meni"><i>01</i> O nama</a>
+      <a href="#tretmani"><i>02</i> Tretmani</a>
+      <a href="#cenovnik"><i>03</i> Cenovnik</a>
+      <a href="#pitanja"><i>04</i> Pitanja</a>
+      <a href="#kontakt"><i>05</i> Kontakt</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+381638372533">063 / 8372533</a>
+      <span>Bulevar Zorana Đinđića 123g · Novi Beograd</span>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero hero--full" id="hero">
+      <div class="hero__bg img-reveal" aria-hidden="true">
+        <img src="assets/img/hero-ai.jpg" alt="Estetska medicina — Poliklinika Pekić" />
+        <div class="hero__grain" aria-hidden="true"></div>
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__grid">
+        <p class="hero__kick" data-reveal>
+          <span class="mono">Poliklinika&nbsp;Pekić</span>
+          <span class="hero__kick-line" aria-hidden="true"></span>
+          <span class="mono">Beograd &amp; Novi&nbsp;Sad</span>
+        </p>
+
+        <h1 class="hero__title" data-tilt-parallax>
+          <span class="hero__line"><span class="hero__word">Umetnost</span></span>
+          <span class="hero__line"><span class="hero__word">prirodne</span></span>
+          <span class="hero__line"><span class="hero__word"><em>lepote.</em></span></span>
+        </h1>
+
+        <div class="hero__meta" data-reveal>
+          <p class="hero__lead">
+            Dr Gorica Rogan Opačić — specijalista plastične, rekonstruktivne i estetske hirurgije. Suptilno, bezbedno i uvek u skladu sa vama.
+          </p>
+          <div class="hero__actions">
+            <a href="#kontakt" class="btn btn--light" data-cursor="book"><span>Zakažite konsultaciju</span></a>
+            <a href="#tretmani" class="link-arrow" data-cursor="link">Istražite tretmane <i aria-hidden="true">↘</i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__badge">
+        <span class="hero__badge-num"><span data-count="10">0</span>+</span>
+        <span class="hero__badge-txt mono">godina<br>iskustva</span>
+      </div>
+
+      <a href="#o-meni" class="hero__scroll mono" data-cursor="down">
+        <span>Skrolujte</span>
+        <span class="hero__scroll-ln" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <section class="strip" aria-hidden="true">
+      <div class="strip__row" data-marquee>
+        <span>Lepi i zadovoljni sobom</span><b>✳</b>
+        <span>Prirodni rezultati</span><b>✳</b>
+        <span>Registrovani materijali</span><b>✳</b>
+        <span>Individualni pristup</span><b>✳</b>
+        <span>Lepi i zadovoljni sobom</span><b>✳</b>
+        <span>Prirodni rezultati</span><b>✳</b>
+        <span>Registrovani materijali</span><b>✳</b>
+        <span>Individualni pristup</span><b>✳</b>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="o-meni">
+      <div class="sec-head">
+        <span class="idx mono" data-reveal>(01) — O nama</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__left">
+          <div class="portrait portrait--about img-reveal">
+            <img src="assets/img/portrait.jpeg" alt="Dr Gorica Rogan Opačić" />
+            <span class="portrait__cap mono">Dr Gorica Rogan Opačić</span>
+          </div>
+        </div>
+        <div class="about__right">
+          <h2 class="about__title" data-reveal>
+            Ne menjamo vas — <em>otkrivamo</em> vašu najlepšu verziju.
+          </h2>
+          <p class="about__body" data-reveal>
+            Nakon završenog medicinskog fakulteta i odrađenog staža, upisuje specijalizaciju iz plastične i rekonstruktivne hirurgije na Klinici za plastičnu hirurgiju Kliničkog centra Srbije, koju uspešno završava u aprilu 2026. godine i stiče zvanje specijaliste.
+          </p>
+          <p class="about__body" data-reveal>
+            Iza nje je više od <em>10 godina</em> rada sa hijaluronskim filerima, botoksom, mezoterapijom, mezonitima, tretmanima krvnom plazmom i hemijskim pilinzima — uz stalno usavršavanje kod domaćih i inostranih stručnjaka.
+          </p>
+
+          <ul class="about__facts" data-reveal>
+            <li><span class="mono">/01</span> Specijalista plastične, rekonstruktivne i estetske hirurgije</li>
+            <li><span class="mono">/02</span> 10+ godina iskustva u estetskoj medicini</li>
+            <li><span class="mono">/03</span> Član Regionalne lekarske komore Beograd</li>
+            <li><span class="mono">/04</span> Član Udruženja za plastičnu, rekonstruktivnu i estetsku hirurgiju Srbije</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATEMENT (scroll reveal) ================= -->
+    <section class="statement" id="filozofija">
+      <p class="statement__text" data-words>
+        Estetika bez preteranosti. Verujemo u suptilne korekcije koje poštuju vaše crte lica — prirodno, bezbedno i potpuno vaše.
+      </p>
+      <span class="statement__sign mono" data-reveal>— dr Gorica Rogan Opačić</span>
+    </section>
+
+    <!-- ================= TREATMENTS (hover-reveal index) ================= -->
+    <section class="work" id="tretmani">
+      <div class="sec-head sec-head--split">
+        <span class="idx mono" data-reveal>(02) — Estetski tretmani</span>
+        <h2 class="work__title" data-reveal>Vaša lepota<br>je naša <em>briga</em></h2>
+      </div>
+
+      <ul class="work__list" id="workList">
+        <li class="row" data-cursor="view" data-img="assets/img/work-02.jpg">
+          <span class="row__idx mono">01</span>
+          <h3 class="row__name">Hijaluronski fileri</h3>
+          <span class="row__tag mono">Lice &amp; usne</span>
+          <p class="row__desc">Brzo, bezbedno i bezbolno rešenje za veliki broj nepravilnosti na licu.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-05.jpg">
+          <span class="row__idx mono">02</span>
+          <h3 class="row__name">Mezoterapija</h3>
+          <span class="row__tag mono">Sjaj kože</span>
+          <p class="row__desc">Neka vaša koža zablista mladalačkim sjajem.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-06.jpg">
+          <span class="row__idx mono">03</span>
+          <h3 class="row__name">Biorevitalizacija</h3>
+          <span class="row__tag mono">Hidratacija</span>
+          <p class="row__desc">Vrhunska hidratacija i podmlađivanje kože.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-07.jpg">
+          <span class="row__idx mono">04</span>
+          <h3 class="row__name">Mezoniti</h3>
+          <span class="row__tag mono">Zatezanje</span>
+          <p class="row__desc">Najjača stimulacija kolagena za zategnutu, čvršću kožu.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-08.jpg">
+          <span class="row__idx mono">05</span>
+          <h3 class="row__name">„Vampirski" tretman</h3>
+          <span class="row__tag mono">Krvna plazma</span>
+          <p class="row__desc">Tretman holivudskih zvezda — snaga vaše sopstvene plazme.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-11.jpg">
+          <span class="row__idx mono">06</span>
+          <h3 class="row__name">Korekcija bora</h3>
+          <span class="row__tag mono">Mimika</span>
+          <p class="row__desc">Gornja trećina lica — čelo, između obrva i oko očiju, bez napetog izgleda.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-04.jpg">
+          <span class="row__idx mono">07</span>
+          <h3 class="row__name">Lipoliza</h3>
+          <span class="row__tag mono">Oblikovanje</span>
+          <p class="row__desc">Gubite masne naslage tačno tamo gde želite.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+        <li class="row" data-cursor="view" data-img="assets/img/work-10.jpg">
+          <span class="row__idx mono">08</span>
+          <h3 class="row__name">Prekomerno znojenje</h3>
+          <span class="row__tag mono">Botulinum</span>
+          <p class="row__desc">Neprijatni tragovi na odeći postaju prošlost.</p>
+          <span class="row__arw" aria-hidden="true">↗</span>
+        </li>
+      </ul>
+
+      <!-- floating preview panel (desktop) -->
+      <div class="work__peek" id="workPeek" aria-hidden="true">
+        <img id="peekImg" src="assets/img/work-02.jpg" alt="" />
+        <div class="work__peek-cap">
+          <span class="work__peek-idx mono">01</span>
+          <span class="work__peek-name">Hijaluronski fileri</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery" id="galerija">
+      <div class="sec-head sec-head--split">
+        <span class="idx mono" data-reveal>(✦) — U fokusu</span>
+        <h2 class="work__title" data-reveal>Momenti iz<br><em>ordinacije</em></h2>
+      </div>
+      <div class="gallery__grid">
+        <figure class="ga"><img src="assets/img/work-04.jpg" alt="Oblikovanje tela" loading="lazy"><figcaption class="ga__cap mono">Lipoliza · oblikovanje</figcaption></figure>
+        <figure class="ga"><img src="assets/img/work-11.jpg" alt="Korekcija bora" loading="lazy"><figcaption class="ga__cap mono">Korekcija bora</figcaption></figure>
+        <figure class="ga"><img src="assets/img/work-10.jpg" alt="Nega kože" loading="lazy"><figcaption class="ga__cap mono">Nega kože</figcaption></figure>
+        <figure class="ga"><img src="assets/img/work-02.jpg" alt="Hijaluronski fileri" loading="lazy"><figcaption class="ga__cap mono">Hijaluronski fileri</figcaption></figure>
+        <figure class="ga"><img src="assets/img/work-07.jpg" alt="Mezoniti" loading="lazy"><figcaption class="ga__cap mono">Mezoniti</figcaption></figure>
+        <figure class="ga"><img src="assets/img/work-05.jpg" alt="Mezoterapija" loading="lazy"><figcaption class="ga__cap mono">Mezoterapija</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ================= OFFER ================= -->
+    <section class="offer" id="ponuda">
+      <div class="offer__inner">
+        <span class="idx mono" data-reveal>(★) — Ponuda meseca</span>
+        <h2 class="offer__title" data-reveal>Korekcija usana<br>već od <em>21.000</em> <span class="offer__cur">din</span></h2>
+        <p class="offer__desc" data-reveal>Prirodno punije i lepše oblikovane usne uz vrhunske hijaluronske filere — Belotero, Teosyal i Radiant. Individualan pristup proporcijama vašeg lica.</p>
+        <a href="#kontakt" class="btn btn--light" data-reveal data-cursor="book"><span>Rezervišite ponudu</span></a>
+      </div>
+      <div class="offer__deco mono" aria-hidden="true">SUPTILNO · PRIRODNO · VAŠE</div>
+    </section>
+
+    <!-- ================= PRICING (editorial menu) ================= -->
+    <section class="price" id="cenovnik">
+      <div class="sec-head sec-head--split">
+        <span class="idx mono" data-reveal>(03) — Cenovnik</span>
+        <h2 class="price__title" data-reveal>Transparentne <em>cene</em></h2>
+      </div>
+
+      <div class="price__filter mono" data-reveal>
+        <button class="price__f is-on" data-f="all">Sve</button>
+        <button class="price__f" data-f="botoks">Botoks</button>
+        <button class="price__f" data-f="fileri">Fileri</button>
+        <button class="price__f" data-f="booster">Skin boosteri</button>
+      </div>
+
+      <ul class="price__list" id="priceList">
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks — 1 regija</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">16.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks — 2 regije</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">22.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks — 3 regije</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">28.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks brade</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">7.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks masetera</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">30.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Botoks vrata</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">30.000</span></li>
+        <li class="pr" data-cat="botoks"><span class="pr__n">Hiperhidroza (prekomerno znojenje)</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">35.000–40.000</span></li>
+        <li class="pr" data-cat="fileri"><span class="pr__n">Belotero 1 ml</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">28.000</span></li>
+        <li class="pr" data-cat="fileri"><span class="pr__n">Teosyal (RHA3) 1 ml</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">28.000</span></li>
+        <li class="pr" data-cat="fileri"><span class="pr__n">Teosyal (RHA Kiss) 0,7 ml</span><span class="pr__b mono">usne</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">21.000</span></li>
+        <li class="pr" data-cat="fileri"><span class="pr__n">Radiant 1 ml</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">23.500</span></li>
+        <li class="pr" data-cat="booster"><span class="pr__n">Crystal</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">18.000</span></li>
+        <li class="pr" data-cat="booster"><span class="pr__n">Aquashine</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">21.000</span></li>
+        <li class="pr" data-cat="booster"><span class="pr__n">Long Lasting (LOLA)</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">25.000</span></li>
+        <li class="pr" data-cat="booster"><span class="pr__n">PRP („vampirski" tretman)</span><span class="pr__dot" aria-hidden="true"></span><span class="pr__v mono">21.000</span></li>
+      </ul>
+      <p class="price__note mono" data-reveal>* Sve cene su u dinarima (RSD). Konačan plan i cena tretmana definišu se na konsultaciji, prema individualnim potrebama.</p>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq" id="pitanja">
+      <div class="sec-head sec-head--split">
+        <span class="idx mono" data-reveal>(04) — Najčešća pitanja</span>
+        <h2 class="faq__title" data-reveal>Odgovori pre<br>vašeg <em>tretmana</em></h2>
+      </div>
+
+      <div class="faq__list">
+        <details class="qa" open>
+          <summary data-cursor="toggle"><span class="qa__q">Da li usne korigovati hijaluronom ili trajnim materijalima?</span><span class="qa__s" aria-hidden="true"></span></summary>
+          <div class="qa__a"><p>Usne, kao i ostale regije lica, koriguju se isključivo hijaluronskim filerima — potpuno prirodnim, bezbednim i registrovanim. Veštačke, trajne materijale prate komplikacije i zabranjeni su u estetske svrhe.</p></div>
+        </details>
+        <details class="qa">
+          <summary data-cursor="toggle"><span class="qa__q">Da li su tretmani bolni?</span><span class="qa__s" aria-hidden="true"></span></summary>
+          <div class="qa__a"><p>Nisu. Pre tretmana nanosi se topikalna anestezija, a i sami fileri u sastavu sadrže određeni procenat lidokaina. Intervencije su tek blago neprijatne.</p></div>
+        </details>
+        <details class="qa">
+          <summary data-cursor="toggle"><span class="qa__q">Da li mi je 1 ml filera dovoljan?</span><span class="qa__s" aria-hidden="true"></span></summary>
+          <div class="qa__a"><p>Zavisi od željenog rezultata. Za osveženje i blago uvećanje usana 1 ml je sasvim dovoljan; za veće volumene ili druge korekcije potrebna je veća količina.</p></div>
+        </details>
+        <details class="qa">
+          <summary data-cursor="toggle"><span class="qa__q">Koji filer je najbolji?</span><span class="qa__s" aria-hidden="true"></span></summary>
+          <div class="qa__a"><p>Svi registrovani fileri su kvalitetni i zadovoljavaju stroge standarde. U radu koristimo proverene, registrovane filere — Belotero, Teosyal i Radiant.</p></div>
+        </details>
+        <details class="qa">
+          <summary data-cursor="toggle"><span class="qa__q">Kada je pravo vreme da počnem sa tretmanima?</span><span class="qa__s" aria-hidden="true"></span></summary>
+          <div class="qa__a"><p>Zavisi od stanja kože, na koje utiču ishrana, genetika i svakodnevna nega. Preporuka je započeti sa prvim znacima starenja.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="kontakt">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <span class="idx mono" data-reveal>(05) — Kontakt</span>
+          <h2 class="contact__title" data-reveal>Zakažite<br>svoju <em>konsultaciju</em></h2>
+          <p class="contact__lead" data-reveal>Ostavite poruku ili nas pozovite — javljamo se u najkraćem roku i pronalazimo termin koji vam odgovara.</p>
+
+          <ul class="contact__info" data-reveal>
+            <li><span class="mono">Telefon</span><a href="tel:+381638372533" data-cursor="link">063 / 8372533</a><a href="tel:+381658040850" data-cursor="link">065 / 8040850</a></li>
+            <li><span class="mono">Mejl</span><a href="mailto:gorica.rogan@gmail.com" data-cursor="link">gorica.rogan@gmail.com</a></li>
+            <li><span class="mono">Adresa</span><span><b>Beograd</b> — Bulevar Zorana Đinđića 123g<br><b>Novi Sad</b> — Grčkoškolska 3</span></li>
+            <li><span class="mono">Radno vreme</span><span>Pon–Pet 09–20 · Sub 09–15 · Ned zatvoreno</span></li>
+          </ul>
+          <div class="contact__soc" data-reveal>
+            <a href="https://www.facebook.com/drgorica" target="_blank" rel="noopener" data-cursor="link">Facebook ↗</a>
+            <a href="http://instagram.com/dr_gorica_rogan_opacic" target="_blank" rel="noopener" data-cursor="link">Instagram ↗</a>
+          </div>
+        </div>
+
+        <div class="contact__right" data-reveal>
+          <form class="form" id="form" novalidate>
+            <div class="fld"><input id="ime" name="ime" required placeholder=" " autocomplete="name" /><label for="ime">Ime i prezime</label><span class="fld__ln" aria-hidden="true"></span></div>
+            <div class="fld"><input id="tel" name="tel" required placeholder=" " autocomplete="tel" /><label for="tel">Telefon</label><span class="fld__ln" aria-hidden="true"></span></div>
+            <div class="fld"><input id="mail" name="mail" type="email" placeholder=" " autocomplete="email" /><label for="mail">Mejl <i>(neobavezno)</i></label><span class="fld__ln" aria-hidden="true"></span></div>
+            <div class="fld fld--sel">
+              <label for="trt" class="fld__lbl-top mono">Tretman koji vas zanima</label>
+              <select id="trt" name="trt" required>
+                <option value="" selected disabled>Izaberite tretman</option>
+                <option>Hijaluronski fileri — usne</option>
+                <option>Hijaluronski fileri — lice</option>
+                <option>Mezoterapija / Biorevitalizacija</option>
+                <option>Korekcija bora</option>
+                <option>Lipoliza</option>
+                <option>„Vampirski" tretman (PRP)</option>
+                <option>Mezoniti</option>
+                <option>Botoks</option>
+                <option>Prekomerno znojenje / hiperhidroza</option>
+                <option>Skin booster</option>
+                <option>Konsultacija</option>
+              </select>
+              <span class="fld__ln" aria-hidden="true"></span>
+            </div>
+            <div class="fld"><textarea id="msg" name="msg" rows="2" placeholder=" "></textarea><label for="msg">Poruka <i>(neobavezno)</i></label><span class="fld__ln" aria-hidden="true"></span></div>
+            <button type="submit" class="btn btn--full" data-cursor="book"><span>Pošaljite upit</span></button>
+            <p class="form__note mono">Vaši podaci se koriste isključivo za zakazivanje termina.</p>
+            <div class="form__ok" id="formOk" hidden><span aria-hidden="true">✳</span><p><b>Hvala vam.</b> Vaš upit je zabeležen — javljamo se u najkraćem roku.</p></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="foot">
+    <div class="foot__big" data-marquee-hover>
+      <span>Lepi&nbsp;i&nbsp;zadovoljni&nbsp;sobom</span>
+      <b aria-hidden="true">✳</b>
+      <span>Lepi&nbsp;i&nbsp;zadovoljni&nbsp;sobom</span>
+      <b aria-hidden="true">✳</b>
+    </div>
+    <div class="foot__grid">
+      <div class="foot__col">
+        <span class="mono foot__k">Lokacije</span>
+        <p>Poliklinika Pekić<br><b>Beograd</b> — Bulevar Zorana Đinđića 123g<br><b>Novi Sad</b> — Grčkoškolska 3</p>
+      </div>
+      <div class="foot__col">
+        <span class="mono foot__k">Kontakt</span>
+        <a href="tel:+381638372533" data-cursor="link">063 / 8372533</a>
+        <a href="tel:+381658040850" data-cursor="link">065 / 8040850</a>
+        <a href="mailto:gorica.rogan@gmail.com" data-cursor="link">gorica.rogan@gmail.com</a>
+      </div>
+      <div class="foot__col">
+        <span class="mono foot__k">Pratite</span>
+        <a href="https://www.facebook.com/drgorica" target="_blank" rel="noopener" data-cursor="link">Facebook ↗</a>
+        <a href="http://instagram.com/dr_gorica_rogan_opacic" target="_blank" rel="noopener" data-cursor="link">Instagram ↗</a>
+      </div>
+      <div class="foot__col">
+        <span class="mono foot__k">Radno vreme</span>
+        <p>Pon–Pet 09–20<br>Subota 09–15<br>Nedelja zatvoreno</p>
+      </div>
+    </div>
+    <div class="foot__base mono">
+      <span>© <span id="yr">2026</span> Dr Gorica Rogan Opačić</span>
+      <span>Sva prava zadržana.</span>
+      <a href="#top" data-cursor="up">Na vrh ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
