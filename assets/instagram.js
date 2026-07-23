@@ -46,6 +46,7 @@
         img.src = p.image;
         img.loading = 'lazy';
         img.alt = cap || 'Rad — Poliklinika Pekić';
+        img.onerror = function () { fig.style.display = 'none'; };
 
         var figc = document.createElement('figcaption');
         figc.className = 'ga__cap mono';
