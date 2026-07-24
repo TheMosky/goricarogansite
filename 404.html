@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preusmeravanje… — Dr Gorica Rogan Opačić</title>
+<script>
+  (function () {
+    // Stari Wix sajt je imao zasebne stranice (/cenovnik, /o-meni…).
+    // Novi sajt je jednostranični — mapiramo stare putanje na sekcije (#).
+    var seg = (location.pathname || '/').replace(/^\/+|\/+$/g, '').toLowerCase().split('/').pop().replace(/\.html?$/, '');
+    var map = {
+      'cenovnik': 'cenovnik', 'cene': 'cenovnik', 'cenovnik': 'cenovnik', 'pricing': 'cenovnik',
+      'o-meni': 'o-meni', 'o-nama': 'o-meni', 'onama': 'o-meni', 'omeni': 'o-meni', 'about': 'o-meni',
+      'tretmani': 'tretmani', 'tretman': 'tretmani', 'usluge': 'tretmani', 'services': 'tretmani',
+      'pitanja': 'pitanja', 'faq': 'pitanja', 'najcesca-pitanja': 'pitanja',
+      'galerija': 'galerija', 'radovi': 'galerija', 'nasi-radovi': 'galerija', 'gallery': 'galerija',
+      'kontakt': 'kontakt', 'contact': 'kontakt',
+      'pocetna': '', 'naslovna': '', 'home': '', 'index': ''
+    };
+    var target = '/';
+    if (Object.prototype.hasOwnProperty.call(map, seg)) {
+      target = map[seg] ? '/#' + map[seg] : '/';
+    }
+    location.replace(target);
+  })();
+</script>
+<meta http-equiv="refresh" content="2;url=/">
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { display: grid; place-items: center; text-align: center; padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #1b1216; color: #ece4d7; }
+  .t { font-family: Georgia, "Times New Roman", serif; font-size: 1.5rem; margin-bottom: .5rem; }
+  p { color: #b8a9b0; }
+  a { color: #be6e52; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="t">Stranica je preseljena</div>
+    <p>Preusmeravamo vas… ako se ne desi automatski, <a href="/">otvorite početnu stranicu</a>.</p>
+  </div>
+</body>
+</html>
