@@ -89,12 +89,27 @@
     });
   });
 
-  // ---------- forma (pitch: bez slanja) ----------
+  // ---------- forma: otvara mejl posetioca sa popunjenim upitom ka klinici (bez spoljnog servisa) ----------
   const form = $('#form'), ok = $('#formOk');
   if (form) form.addEventListener('submit', (e) => {
     e.preventDefault(); if (!form.checkValidity()) { form.reportValidity(); return; }
-    const btn = $('button[type=submit]', form); if (btn) { $('span', btn).textContent = 'Šaljem…'; btn.disabled = true; }
-    setTimeout(() => { $$('.fld, .form__note, button[type=submit]', form).forEach((el) => { el.style.display = 'none'; }); if (ok) ok.hidden = false; refreshSoon(); }, 700);
+    const v = (n) => ((form.elements[n] && form.elements[n].value) || '').trim();
+    const trt = v('trt') || 'Konsultacija';
+    const body = [
+      'Ime i prezime: ' + v('ime'),
+      'Telefon: ' + v('tel'),
+      v('mail') && 'Mejl: ' + v('mail'),
+      'Tretman: ' + trt,
+      v('msg') && '\nPoruka:\n' + v('msg'),
+      '\n— upit sa sajta drgoricarogan.com',
+    ].filter(Boolean).join('\n');
+    const href = 'mailto:' + (form.dataset.to || 'gorica.rogan@gmail.com') +
+      '?subject=' + encodeURIComponent('Upit sa sajta — ' + trt) + '&body=' + encodeURIComponent(body);
+    const again = $('#formMailAgain'); if (again) again.href = href;
+    W.location.href = href;
+    $$('.fld, .form__note, button[type=submit]', form).forEach((el) => { el.style.display = 'none'; });
+    if (ok) ok.hidden = false;
+    refreshSoon();
   });
 
   // ---------- tretmani: slika prati kursor (samo miš); petlja radi samo dok treba ----------

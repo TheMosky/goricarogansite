@@ -259,6 +259,7 @@ em{font-style:italic;color:var(--clay)}
 .fld--sel .fld__top{position:static;display:block;color:var(--clay);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem}
 .form__note{font-size:.72rem;color:var(--mute);letter-spacing:.04em}
 .form__ok{background:var(--wine);color:var(--paper);padding:1.2rem;border-radius:10px;font-size:.95rem}
+.form__ok a{color:var(--rose);text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- FOOTER ---------- */
 .foot{position:relative;z-index:2;background:var(--ink);color:var(--paper);padding:clamp(2.5rem,6vw,5rem) var(--pad) 2rem;overflow:hidden}
